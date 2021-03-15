@@ -1,4 +1,4 @@
-<p align="center"> <img src="app/assets/images/wrap_text.svg.svg" width="15%"> </p>
+<p align="center"> <img src="app/assets/images/wrap_text.svg" width="15%"> </p>
 <p align="center">
 </p>
 <p align="center"> LineWrapper is a web application for inserting new lines or breakpoints into long form text</p>
