@@ -16,7 +16,7 @@ class Wrapper
         offset = 0
       end
 
-      accum << input_string[pos...split]
+      accum << input_string[pos..split]
       accum << delimiter
       pos = split + offset
     end

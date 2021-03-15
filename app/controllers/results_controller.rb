@@ -22,6 +22,11 @@ class ResultsController < ApplicationController
   # POST /results or /results.json
   def create
     @result = Result.new(result_params)
+    line = params[:result]
+    @result[:output_string] = Wrapper.wrap_input(line[:max_width].to_i,
+                                                 line[:new_line],
+                                                 line[:delimeter],
+                                                 line[:input_string])
     render :new
 
     # respond_to do |format|
