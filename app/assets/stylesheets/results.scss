@@ -1,3 +1,122 @@
 // Place all the styles related to the Results controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.u-margin-bottom-med {
+  margin-bottom: 2rem;
+}
+.form-container {
+  border: 2px solid gray;
+  width: 25rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  opacity: 09;
+  -webkit-box-shadow: 10px 9px 53px 14px rgba(0,0,0,0.51);
+  -moz-box-shadow: 10px 9px 53px 14px rgba(0,0,0,0.51);
+  box-shadow: 10px 9px 53px 14px rgba(0,0,0,0.51);
+}
+
+
+.form-title {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.field-label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-field {
+ width: 90%;
+  margin-bottom: 1rem;
+}
+
+.input-field--large[type=text] {
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: inherit;
+}
+.input-field--large {
+  height: 10rem;
+}
+
+//<!-- 1em = 16px -->
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) { @content };    //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) { @content };     //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) { @content };    //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) { @content };    //1800
+  }
+}
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem;
+    border: 2px solid gray;
+    color: var(--color-white-1);
+    font-weight: bold;
+    width: 20%;
+
+    @include respond(tab-land) {
+      //width: 25rem;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+
+  &--primary {
+    background-color: var(--color-primary);
+  }
+
+  &:hover {
+    background-color: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(var(--color-grey-light-4), .15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba(var(--color-grey-light4), .15);
+    transform: translateY(0);
+  }
+
+  &__icon {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5rem;
+    fill: white;
+
+    @include respond(phone) {
+      width: 3rem;
+      height: 2rem;
+    }
+  }
+}
+
+.btn--red {
+  font-size: 0.7rem !important;
+  text-align: center;
+  margin-right: 3rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}

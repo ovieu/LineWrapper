@@ -12,36 +12,38 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :max_width %>
-    <%= form.number_field :max_width %>
+    <%= form.label :name, class: "field-label"%>
+    <%= form.number_field :max_width , placeholder: 'Enter the max width (between 10 and 70)', class: "input-field" %>
   </div>
 
   <div class="field">
-    <%= form.label :new_line %>
-    <%= form.text_field :new_line %>
+    <%= form.label :new_line_string, class: "field-label" %>
+    <%= form.text_field :new_line, placeholder: 'Enter the new line string (e.g \n or <br>)', class: "input-field" %>
   </div>
 
   <div class="field">
-    <%= form.label :delimeter %>
-    <%= form.text_field :delimeter %>
+    <%= form.label :Delimeter,  class: "field-label" %>
+    <%= form.text_field :delimeter, placeholder: 'Enter the line delimeter (e.g <white space>)',
+                        class: "input-field" %>
   </div>
 
   <div class="field">
-    <%= form.label :input_string %>
-    <%= form.text_field :input_string %>
+    <%= form.label :input_string, class: "field-label" %>
+    <%= form.text_area :input_string, placeholder: 'Enter the input_string', class: "input-field input-field--large" %>
   </div>
 
-  <div class="field">
-    <%= form.label :input_hash %>
-    <%= form.text_field :input_hash %>
-  </div>
+<!--  <div class="field">-->
+    <%#= form.label :input_hash, class: "field-label" %>
+    <%#= form.text_field :input_hash, class: "input-field" %>
+<!--  </div>-->
 
   <div class="field">
-    <%= form.label :output_string %>
-    <%= form.text_field :output_string %>
+    <%= form.label :output_string, class: "field-label" %>
+    <%= form.text_area :output_string, class: "input-field input-field--large" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:'btn' %>
+    <%= link_to 'clear', root_path, class: "btn btn--red"%>
   </div>
 <% end %>
