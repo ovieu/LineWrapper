@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  max_width: 1
+  new_line: MyString
+  delimeter: MyString
+  input_string: MyString
+  input_hash: MyString
+  output_string: MyString
+
+two:
+  max_width: 1
+  new_line: MyString
+  delimeter: MyString
+  input_string: MyString
+  input_hash: MyString
+  output_string: MyString
