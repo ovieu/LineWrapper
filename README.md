@@ -28,9 +28,9 @@ It is built with Ruby on Rails with Postgres as the datastore.
 ### Usage
 1. Max width: Also known as the maximum line length. This is the maximum length you want
 your output to have. It accepts numbers only. For example, setting the max width to 50 ensures every line has a maximum of 50 characters.
-2. New line String. The new line string represents the character or group of characters that you would like to serve as the breakpoint of every line. For example, for HTML documents, you can use <br> as the new line string. Regular programming languages like python, java and ruby accepts '\n' as newlines. 
-3. Delimeter. The delimeter indicates which character you would like to serve as a word seperator in your input. For example, in a given string like "Hello there", the default delimiter is the white space character between 'Hello" and "word". 
-4.Input String. The input string is the line or string you would like to convert into a wrapped format. 
+2. New line String: The new line string represents the character or group of characters that you would like to serve as the breakpoint of every line. For example, for HTML documents, you can use \<br\> as the new line string. Regular programming languages like python, java and ruby accepts '\n' as newlines. 
+3. Delimeter: The delimeter indicates which character you would like to serve as a word seperator in your input. For example, in a given string like "Hello there", the default delimiter is the white space character between 'Hello" and "word". \n
+4.Input String: The input string is the line or string you would like to convert into a wrapped format. 
    
 To use the program, simply fill in these fields and click create result.
 
